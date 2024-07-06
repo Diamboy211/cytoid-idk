@@ -149,7 +149,7 @@ struct BandNoise
 			ui[i] *= -1.0f;
 		fft(ar, ai, br, bi, ur, ui, 1);
 		for (uint64_t i = 0; i < 8192; i++)
-			s[i] = ar[i] / 8192.0f * band_scale;
+			s[i] = ar[i] / 7000.0f * band_scale;
 	}
 	constexpr static void fft(float *ar, float *ai, float *br, float *bi, const float *ur, const float *ui, uint64_t step)
 	{

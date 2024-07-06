@@ -228,8 +228,8 @@ static void generate_level_json()
 	JSONObject level_json = make_object();
 	level_json["schema_version"] = 2;
 	level_json["version"] = 1;
-	level_json["id"] = "diamboy.4kprac.testing";
-	level_json["title"] = "4k practice";
+	level_json["id"] = "diamboy.4fprac.testing";
+	level_json["title"] = "4f practice";
 	level_json["artist"] = "diamboy";
 	level_json["artist_source"] = "https://github.com/Diamboy211/cytoid-idk/";
 	level_json["illustrator"] = "diamboy";
@@ -282,7 +282,7 @@ void generate_chart()
 			chart["note_list"][note_idx]["page_index"] = i;
 			chart["note_list"][note_idx]["type"] = 0;
 			chart["note_list"][note_idx]["tick"] = i * 480 + j / 4 * 60;
-			chart["note_list"][note_idx]["x"] = 0.125 * (i & 1) + 0.25 * (j & 3);
+			chart["note_list"][note_idx]["x"] = double((j & 3) * 2 + (i & 1)) / 7.0;
 			chart["note_list"][note_idx]["has_sibling"] = false;
 			chart["note_list"][note_idx]["hold_tick"] = 0;
 			chart["note_list"][note_idx]["next_id"] = 0;
