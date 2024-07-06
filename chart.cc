@@ -228,7 +228,7 @@ static void generate_level_json()
 	JSONObject level_json = make_object();
 	level_json["schema_version"] = 2;
 	level_json["version"] = 1;
-	level_json["id"] = "diamboy.4fprac.testing";
+	level_json["id"] = "diamboy.4fprac";
 	level_json["title"] = "4f practice";
 	level_json["artist"] = "diamboy";
 	level_json["artist_source"] = "https://github.com/Diamboy211/cytoid-idk/";
