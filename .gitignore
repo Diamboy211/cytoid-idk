@@ -1,0 +1,9 @@
+*.swp
+*.cytoidlevel
+*.o
+level.json
+main
+out.ogg
+out.pbm
+wtf.json
+bg.png
